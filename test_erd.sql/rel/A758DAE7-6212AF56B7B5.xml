@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="A758DAE7-96C6-3776-BB95-6212AF56B7B5" mainViewID="AADFEC36-A7E2-64FA-09CE-208BA07ABE12">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-16 07:19:19 UTC</createdTime>
+<ownerDesignName>test_erd.sql</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

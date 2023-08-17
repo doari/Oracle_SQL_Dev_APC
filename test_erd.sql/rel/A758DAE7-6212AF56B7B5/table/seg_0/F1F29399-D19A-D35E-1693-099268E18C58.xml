@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1F29399-D19A-D35E-1693-099268E18C58" name="sample2">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-16 07:28:13 UTC</createdTime>
+<ownerDesignName>test_erd.sql</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="num" id="A151F1CA-D858-14D8-2991-7525EC87AE6A">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-16 07:29:47 UTC</createdTime>
+<ownerDesignName>test_erd.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sale" id="EA4925BD-E4F7-6707-BB3B-5592D40BC871">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-16 07:29:47 UTC</createdTime>
+<ownerDesignName>test_erd.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<ownDataTypeParameters>,40,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="point" id="8A5DE10D-E76C-04EF-E1BE-EC980F43DEF7">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-16 07:29:47 UTC</createdTime>
+<ownerDesignName>test_erd.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sample_id" id="4EBE3142-83DD-7A00-9F12-8B17AE22531F">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-16 07:30:51 UTC</createdTime>
+<ownerDesignName>test_erd.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9289AA2A-26A9-7BE2-DB6B-EF2428642E59" referredColumn="D36FAD4B-858A-92E5-856F-2A8447A506DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="879E1736-454E-FABF-A1B5-D7BD48DFC32A" name="sample2_sample_FK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-16 07:30:51 UTC</createdTime>
+<ownerDesignName>test_erd.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EBE3142-83DD-7A00-9F12-8B17AE22531F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
