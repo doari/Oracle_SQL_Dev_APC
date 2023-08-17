@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="C0BBC371-CB7E-7480-39FD-A0642D7F9746" mainViewID="DBC59896-1595-6BDE-52E9-107A5B000496">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:00:54 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

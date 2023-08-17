@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E85F641-A65D-7FD6-26BA-31B8BBFB0E02" name="환자">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:12:18 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="환자ID" id="7107B18B-2D84-9468-C5C1-71FBBD4E50C9">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:13:46 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="간호사ID" id="4BD0609A-5CD0-6E91-DDFE-914FFFFD4A56">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:13:46 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="의사ID" id="324D4E7A-F46B-711D-0D4F-87130F5FABCB">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:13:46 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="의사_의사ID" id="EDA4E904-4711-87BA-16C9-570E46ABF158">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:19:14 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4F812C3-B845-D9CF-638B-73965D31991A" referredColumn="73D58A33-89F7-E1E1-D675-F34281A666FA"/>
+</associations>
+</Column>
+<Column name="간호사_간호사ID" id="9E285E31-90A3-38C7-A081-130617FCEFE3">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:19:29 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE0738FA-4840-4A17-75B6-4DDE33028735" referredColumn="13F11337-3599-FFE3-DB96-C5554FE0E613"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="40C8EE70-DF96-55D3-A44F-F56490D53D2A" name="환자_PK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:13:46 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7107B18B-2D84-9468-C5C1-71FBBD4E50C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16AE2444-9EC3-C9A9-8203-AC54A51F7118" name="환자_의사_FK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:19:14 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDA4E904-4711-87BA-16C9-570E46ABF158"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19982AE1-1BA1-F267-B086-B9529559109D" name="환자_간호사_FK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:19:29 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E285E31-90A3-38C7-A081-130617FCEFE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD7EE055-0B7B-8594-C9AE-DBF8DC906C07" name="차트">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:09:42 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="차트번호" id="681FC7DC-8858-003B-14C8-4035C5B4479F">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:11:32 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="진료ID" id="1D93CF8E-26B7-D178-3576-65B38006A76D">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:11:32 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="간호사ID" id="7716F3D1-EA53-128A-F190-EE39770B2CEC">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:11:32 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="진료_진료ID" id="E38401D1-0333-C425-16E5-7887878FC34E">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:17:56 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47C2CDF0-D64C-8C41-D062-A7289930C9EA" referredColumn="60ECAC9A-C215-58B7-08FF-72E71CC7D534"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D397AA5-54F4-B486-FCB9-614E6B32F45D" name="치료_PK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:11:32 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="681FC7DC-8858-003B-14C8-4035C5B4479F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC123382-2455-6F71-A198-08828235A43F" name="차트_진료_FK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:17:56 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E38401D1-0333-C425-16E5-7887878FC34E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

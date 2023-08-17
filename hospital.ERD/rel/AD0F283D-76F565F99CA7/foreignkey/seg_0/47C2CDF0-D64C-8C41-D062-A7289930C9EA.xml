@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="47C2CDF0-D64C-8C41-D062-A7289930C9EA" containerWithKeyObject="FD7EE055-0B7B-8594-C9AE-DBF8DC906C07" localFKIndex="FC123382-2455-6F71-A198-08828235A43F" name="차트_진료_FK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 07:17:56 UTC</createdTime>
+<ownerDesignName>hospital.ERD</ownerDesignName>
+<referredTableLongName>진료</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>100F290E-C828-60F7-E7C6-EDA3AFE9BEC0</referredTableID>
+<keyObject>C17ECB79-3D04-4854-B6D4-EDDD6FA97029</keyObject>
+<referredKeyID>C17ECB79-3D04-4854-B6D4-EDDD6FA97029</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>진료ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
