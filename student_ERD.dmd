@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="student_ERD" id="E98DDC92-AF56-488C-938F-963B24AED3B9" version="3.5">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-16 07:16:42 UTC</createdTime>
+<ownerDesignName>test_erd.sql</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E98DDC92-AF56-488C-938F-963B24AED3B9</designId>
+</OSDM_Design>

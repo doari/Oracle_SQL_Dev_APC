@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C769D49-E03B-5C3F-FFAC-C2264F30A49D" name="교수">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:29:19 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="교수번호" id="08CA4D17-14D0-1232-D136-666BA1F3A833">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:30:05 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="학과번호" id="95E7EDB7-2107-ADC4-51B1-A00EB2D1ADEC">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:30:05 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="학과_학과번호" id="9BDF7B52-8B02-BEB8-A9E3-44147828F387">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:34:16 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B0C7C41-0D68-F9D4-074C-51FD8FA76CE7" referredColumn="4EA39379-4799-6225-C659-E8269147734F"/>
+</associations>
+</Column>
+<Column name="강좌번호" id="94E0868E-FD64-C12A-893B-CF8A9432398F">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:40:37 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="강좌_강좌번호" id="8B46E076-B4FF-270D-F7D2-B0B39276E4E6">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:44:29 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A5CCFE3-9BCF-F7EE-B03B-7E3A2B2013C9" referredColumn="FC63DAFA-819C-D9DE-B5BC-F32381428E12"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7922CBDB-A151-EE8F-61E1-DE36592091EA" name="교수_PK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:30:05 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08CA4D17-14D0-1232-D136-666BA1F3A833"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6121DAA6-44D2-83A3-3B6B-070AEE1E7D23" name="교수_학과_FK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:34:16 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BDF7B52-8B02-BEB8-A9E3-44147828F387"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8632A17-6EA6-A441-EB95-D9E6806BF114" name="교수_강좌_FK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:44:29 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B46E076-B4FF-270D-F7D2-B0B39276E4E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E0139114-74CA-6023-16D6-D4DC300D5021" containerWithKeyObject="58C985DA-FD35-BDF3-EE3C-6E68FF1AB962" localFKIndex="74A79C7E-04E2-4751-0290-435EE898BC77" name="수강내역_학생_FK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:43:56 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<referredTableLongName>학생</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4DE28886-C882-952F-2ADF-3F52F4DBACE6</referredTableID>
+<keyObject>1DEEC425-2C2F-66DA-2276-4F73EC42A556</keyObject>
+<referredKeyID>1DEEC425-2C2F-66DA-2276-4F73EC42A556</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>학생번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

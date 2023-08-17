@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC6B6F9B-7301-AB6E-5081-0B1B4B189B47" name="강좌">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:41:04 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="강좌번호" id="FC63DAFA-819C-D9DE-B5BC-F32381428E12">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:41:21 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00170B51-220F-3BB8-A657-AD2A94F709C3" name="강좌_PK">
+<createdBy>PARK EUNJIN</createdBy>
+<createdTime>2023-08-17 06:41:21 UTC</createdTime>
+<ownerDesignName>student_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC63DAFA-819C-D9DE-B5BC-F32381428E12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
