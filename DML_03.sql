@@ -70,8 +70,8 @@ from orders;
 SELECT
     SUM(saleprice) as Total,
     AVG(saleprice) as Average,
-    MAX(saleprice) as Minumun,
-    MIN(saleprice) as Maximun
+    MAX(saleprice) as Maximun,
+    MIN(saleprice) as Minimun
 FROM orders;
 -- orders의 모든행 추출
 select * from orders;

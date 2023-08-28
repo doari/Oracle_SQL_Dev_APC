@@ -43,3 +43,24 @@ from customer cs
 where EXISTS(select * 
             from orders od
             where cs.custid=od.custid);
+            
+-- 상관부속질의
+-- 출판사별로 출판사의 평균도서 가격보다 더 비싼 가격의 도서이름과 출판사를 구하시오
+select * from book;
+
+select bookname,publisher,price
+from book b1
+where price > (select avg(b2.price)
+                from book b2
+                where b1.publisher=b2.publisher);
+                
+-- 집합연산
+-- 차집합(MINUS), 합집합(UNION), 교집합(INTERSECT)(INNER JOIN으로 대채)
+-- 도서를 주문하지 않은 고객의 이름을 보이시오--전체고객에서 결재한고객 빼주기(차집합)
+select name
+from customer
+MINUS
+select name
+from customer
+where custid IN (select custid
+                from orders);

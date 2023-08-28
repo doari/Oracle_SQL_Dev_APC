@@ -22,3 +22,7 @@ grant connect, resource to guest;
 
 -- 다른 데이터베이스 접근 권한
 grant create table, create session, create view, create sequence, create procedure to guest;
+
+-- USERS 테이블스페이스에 대한 권한 부여
+grant unlimited tablespace to madang;
+grant unlimited tablespace to guest;
